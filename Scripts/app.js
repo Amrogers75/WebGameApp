@@ -9,7 +9,7 @@
             $stateProvider
                 .state('main', {
                     url: "/main",
-                    template: "<home-template></home-template>"
+                    template: '<home></home>'
                 })
         });
 })();
