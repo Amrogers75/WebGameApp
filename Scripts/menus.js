@@ -6,9 +6,20 @@
             controller: menuController
 
         });
+    
 
     function menuController() {
-        
+            var vm = this;
+        vm.numVal =numVal;
+        // functions
+        vm.add = add;
+
+
+            function add(num){
+                dmg = 1;
+                
+                
+            }
          }
 })();
     
