@@ -3,9 +3,9 @@
 
     angular.module('myApp')
         .component('home', { // the tag for using this is <char-detail>
-            templateUrl: "../Templates/home.template.html",
-            controller: homeController
-
+            templateUrl: "Templates/home.template.html",
+            controller: homeController,
+            controllerAs: "vm"
         });
 
         function homeController() {
