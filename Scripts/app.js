@@ -1,11 +1,13 @@
 (function () {
     angular.module("myApp", ['ui.router', 'ngMaterial', 'jkAngularCarousel','ngMessages', 'material.svgAssetsCache','firebase'])
-        .config(function($stateProvider, $urlRouterProvider) {
+
+    .config(function($stateProvider, $urlRouterProvider) {
             //
             // For any unmatched url, redirect to /state1
             $urlRouterProvider.otherwise("/main");
             //
             // Now set up the states
+            
             $stateProvider
                 .state('main', {
                     url: "/main",
@@ -15,6 +17,26 @@
         .controller('AppCtrl', function($scope, $mdDialog) {
             $scope.status = '  ';
             $scope.customFullscreen = false;
+            
+            var originatorEv;
+            $scope.playerInfo = playerInfo;
+            $scope.battle =battle;
+            $scope.signOut = signOut;
+
+            $scope.openNameMenu = function($mdOpenMenu, ev) {
+                console.log("menu opend");
+                originatorEv = ev;
+                $mdOpenMenu(ev);
+            };
+            function playerInfo(){
+                
+            }
+            function battle(){
+                
+            }
+            function signOut(){
+                
+            }
 
             $scope.showAdvanced = function(ev) {
                 $mdDialog.show({
@@ -35,7 +57,6 @@
             function DialogController($scope, $mdDialog ,$firebaseAuth, $firebaseObject, $log) {
                 
                 $scope.login = login;
-
 
                 function login(provider){
                     var auth = $firebaseAuth();
@@ -96,6 +117,7 @@
                 $scope.answer = function(answer) {
                     $mdDialog.hide(answer);
                 };
+
             }
         });
 
