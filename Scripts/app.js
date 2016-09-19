@@ -14,14 +14,17 @@
                     template: '<home></home>'
                 })
         })
-        .controller('AppCtrl', function($scope, $mdDialog) {
+        .controller('AppCtrl', function($scope, $mdDialog,$firebaseAuth,$log) {
             $scope.status = '  ';
             $scope.customFullscreen = false;
-            
+
             var originatorEv;
             $scope.playerInfo = playerInfo;
             $scope.battle =battle;
             $scope.signOut = signOut;
+            $scope.getDisplayName = function() {return userData ? userData.displayName || userData.email : undefined; }
+            var userData = JSON.parse(localStorage.getItem('firebase:authUser:AIzaSyBAPdMPF0kjUAvfYwkrXxiMxBw9rqaC62A:[DEFAULT]'));
+            $scope.$parent.displayName = $scope.getDisplayName();
 
             $scope.openNameMenu = function($mdOpenMenu, ev) {
                 console.log("menu opend");
@@ -35,7 +38,10 @@
                 
             }
             function signOut(){
-                
+                var auth = $firebaseAuth();
+                $log.log($scope.getDisplayName() + " logged out");
+                $scope.displayName = undefined;
+                auth.$signOut();
             }
 
             $scope.showAdvanced = function(ev) {
@@ -70,7 +76,7 @@
                 function loginSuccess(firebaseUser) {
                     console.log("loginSuccess");
                     $mdDialog.cancel();
-                    $log.log({firebaseUser});
+                    //$log.log(firebaseUser);
                     $scope.displayName =  $scope.$parent.displayName = firebaseUser.user ? firebaseUser.user.displayName : firebaseUser.email;
                     $scope.showLogin = false;
                     $scope.password = undefined;
@@ -79,8 +85,8 @@
                     var ref = firebase.database().ref("users");
                     var profileRef = ref.child($scope.providerUser.uid);
                     $scope.user = $firebaseObject(profileRef);
-                    $log.log($scope.user);
-                    $log.log({profileRef});
+                    //$log.log($scope.user);
+                    //$log.log(profileRef);
                     $scope.user.$loaded().then(function () {
                         if (!$scope.user.displayName) {
                             $log.log("creating user...");
@@ -95,6 +101,7 @@
                             });
                         } else {
                             $log.log('user already created!');
+                            
                         }
                     });
                 }
