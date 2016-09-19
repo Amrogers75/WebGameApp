@@ -1,12 +1,30 @@
 <!--player img/ name-->
 <div>
     <img ng-src="{{vm.get_gravatar_image_url()}}" class="md-avatar" alt="{{item.who}}">
+    <span class="playerTitle">Display Name Here</span>
 </div>
-
+{{ parent.displayName }}
 <!--my stats-->
-
 
 <!--top players-->
 
-
+<md-content class="md-padding">
+    <md-tabs class="md-primary" md-selected="data.selectedIndex" md-align-tabs="{{data.bottom ? 'bottom' : 'top'}}">
+        <md-tab id="tab1">
+            <md-tab-label>Player Info</md-tab-label>
+            <md-tab-body>
+                Wins : 999<br>
+                Loses  :  0
+            </md-tab-body>
+        </md-tab>
+        <md-tab id="tab2">
+            <md-tab-label>Top Players</md-tab-label>
+            <md-tab-body>
+                Garrett Brinkman <br>
+                Wins : 999  <br>
+                Loses : 0  <br>
+            </md-tab-body>
+        </md-tab>
+    </md-tabs>
+</md-content>
 <!--battle-->
