@@ -5,15 +5,22 @@
         .component('playerInfo', { // the tag for using this is <char-detail>
             templateUrl: "Templates/playerInfo.html",
             controller: playerInfoController,
-            controllerAs: 'vm'
-
+            controllerAs: 'vm',
+            binding:{
+                // player: '=',
+                displayName: '='
+            }
         })
         .config(aboutConfig);
 
     function aboutConfig($stateProvider) {
         $stateProvider.state('playerInfo', {
             url: '/playerInfo',
-            template: '<player-info></player-info>'
+            template: '<player-info ></player-info>',
+            binding:{
+                player: '=',
+                displayName: '='
+            }
         });
     }
 

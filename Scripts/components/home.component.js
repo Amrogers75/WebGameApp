@@ -13,7 +13,7 @@
             var vm = this;
             vm.dataArray = [
                 {
-                    src: 'https://www.travelexcellence.com/images/movil/La_Paz_Waterfall.jpg'
+                    src: 'https://pbs.twimg.com/media/B5YSU-yCcAEW36J.jpg'
                 },
                 {
                     src: 'http://www.parasholidays.in/blog/wp-content/uploads/2014/05/holiday-tour-packages-for-usa.jpg'

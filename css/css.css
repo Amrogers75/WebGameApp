@@ -1,0 +1,23 @@
+.body{
+    background-color: azure;
+}
+.tilte{
+    background-color: #3383FF;
+}
+md-card.md-default-theme, md-card {
+    background-color: orange;
+    border-radius: 155px;
+}
+element.style{
+    background-color: rebeccapurple;
+}
+.backgrounds{
+    background-color: rebeccapurple;
+}
+.cardTwo{
+    background-color: orange;
+    border-radius: 155px;
+}
+.textGroup{
+    margin-left: 34%;
+}

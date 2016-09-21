@@ -7,17 +7,19 @@
             $urlRouterProvider.otherwise("/main");
             //
             // Now set up the states
-            
+
             $stateProvider
                 .state('main', {
                     url: "/main",
                     template: '<home></home>'
                 })
+
         })
+
         .controller('AppCtrl', function($scope, $mdDialog,$firebaseAuth,$log) {
             $scope.status = '  ';
             $scope.customFullscreen = false;
-
+            // $scope.player = displayName;
             var originatorEv;
             $scope.playerInfo = playerInfo;
             $scope.battle =battle;

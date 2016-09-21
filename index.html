@@ -8,7 +8,7 @@
     <title>AppGame</title>
 </head>
 
-<body>
+<body >
 
 <script src="node_modules/angular/angular.js"></script>
 <script src="node_modules/angular-animate/angular-animate.js"></script>
@@ -31,18 +31,18 @@
 <script src="Scripts/firebaseConfig.js"></script>
 <script src="Scripts/components/playerInfo.component.js"></script>
 <script src="Scripts/components/battle.component.js"></script>
+<script src="Scripts/components/characterSelect.component.js"></script>
 <script src="http://www.myersdaily.org/joseph/javascript/md5.js"></script>
+<script src="service/character.service.js"></script>
 
 
 <!--scripts-->
 
-
 <script src="Scripts/menus.js"></script>
 <md-toolbar class="md-hue-2" ng-controller="AppCtrl as ctrl">
-    <div class="md-toolbar-tools">
-
+    <div class="md-toolbar-tools" style="background-color: #3856ff;">
         <h2>
-            <span ui-sref="main">Super sweet Geem</span>
+            <span ui-sref="main" >Super sweet Geem</span>
         </h2>
         <span flex=""></span>
         <md-button ng-if="!displayName" aria-label="Login" class="md-primary md-raised" ng-click="showAdvanced($event)">
@@ -50,7 +50,7 @@
         </md-button>
         <md-menu ng-if="displayName">
             <md-button aria-label="open name menu" ng-click="openNameMenu($mdOpenMenu, $event)">
-                {{displayName}}
+               {{displayName}}
             </md-button>
             <md-menu-content width="4">
                 <md-menu-item>
@@ -60,9 +60,9 @@
                     </md-button>
                 </md-menu-item>
                 <md-menu-item>
-                    <md-button ng-click="battle()" ui-sref="battle">
+                    <md-button ng-click="battle()" ui-sref="characterSelect">
                         <md-icon md-svg-icon="call:voicemail"></md-icon>
-                        Battle
+                        Battle!
                     </md-button>
                 </md-menu-item>
                 <md-menu-divider></md-menu-divider>
@@ -72,14 +72,21 @@
                         Sign Out
                     </md-button>
                 </md-menu-item>
+
             </md-menu-content>
         </md-menu>
     </div>
 </md-toolbar>
 
-<md-content layout-padding>
-    <ui-view></ui-view>
+<md-content layout-padding style="background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/05/Futuristic-HD-Wallpapers.jpg');">
+    <ui-view player="displayName"></ui-view>
 </md-content>
+<footer>
+
+    <div style="background-image: url('https://i.ytimg.com/vi/D_V9UgaCDwk/maxresdefault.jpg');">
+redasdfasfasdfasdf
+    </div>
+</footer>
 
 </body>
-</html>
+</html>v
