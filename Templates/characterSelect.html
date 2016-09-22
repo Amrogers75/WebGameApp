@@ -1,29 +1,64 @@
-characterSelect screen
+<div class="md-display-3"> Fight</div>
 
 <div layout="row" layout-wrap>
-    <div flex="20">[flex=33]</div>
-    <div flex="20">[flex=33]</div>
-    <div flex="20">[flex=33]</div>
-    <div flex="20">[flex=33]</div>
-    <div flex="20">[flex=33]</div>
-    <div flex="33">[flex=33]</div>
-    <div flex="33">[flex=33]</div>
-    <div flex="33">[flex=33]</div>
-    <div flex="33">[flex=33]</div>
+    <div flex="20">
+        <md-button class="md-fab md-mini md-primary" aria-label="Use Android" style="width: 111px;height: 111px;">
+        <md-icon md-svg-src="img/icons/android.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+    </div>
+    <div flex="20">
+    <md-button class="md-fab md-mini md-primary" aria-label="Use Android" style="width: 111px;height: 111px;">
+        <md-icon md-svg-src="img/icons/android.svg" style="color: greenyellow;"></md-icon>
+    </md-button>
+    </div>
+    <div flex="20">
+        <md-button class="md-fab md-mini md-primary" aria-label="Use Android" style="width: 111px;height: 111px;">
+            <md-icon md-svg-src="img/icons/android.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+    </div>
+    <div flex="20">
+        <md-button class="md-fab md-mini md-primary" aria-label="Use Android" style="width: 111px;height: 111px;">
+            <md-icon md-svg-src="img/icons/android.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+    </div>
+    <div flex="20">
+        <md-button class="md-fab md-mini md-primary" aria-label="Use Android" style="width: 111px;height: 111px;">
+            <md-icon md-svg-src="img/icons/android.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+    </div> <div flex="25">
+        <md-button class="md-fab md-mini md-primary" aria-label="Use Android" style=" margin-left: 100px ;width: 111px;height: 111px;">
+            <md-icon md-svg-src="img/icons/android.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+    </div> <div flex="25">
+        <md-button class="md-fab md-mini md-primary" aria-label="Use Android" style="margin-left: 100px;width: 111px;height: 111px;">
+            <md-icon md-svg-src="img/icons/android.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+    </div> <div flex="25">
+        <md-button class="md-fab md-mini md-primary" aria-label="Use Android" style="width: 111px;height: 111px;">
+            <md-icon md-svg-src="img/icons/android.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+    </div> <div flex="25">
+        <md-button class="md-fab md-mini md-primary" aria-label="Use Android" style="margin-right: 66px;width: 111px;height: 111px;">
+            <md-icon md-svg-src="img/icons/android.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+    </div>
+
 </div>
-<div>
 
-    <table ng-mouseleave="$ctrl.row=-1">
-        <tr ng-mouseover="$ctrl.row=-1" >
-            <th>#</th>
-            <!--<th ng-repeat="col in $ctrl.columns" ng-click="$ctrl.sort(col)" class="sortable"-->
-            <!--ng-class="$ctrl.orderBy.indexOf(col) > -1 ? $ctrl.sortClass : 'sort-none'">{{ col | uppercase }}</th>-->
-        </tr>
 
-        <tr ng-repeat="evilDwelers in $ctrl.evilDwelers | filter:$ctrl.searchText | orderBy: $ctrl.orderBy">
-            <td>{{ $index+1 }}</td>
-            <td>{{ evilDwelers.name }}</td>
+<!--<div>-->
 
-        </tr>
-    </table>
-</div>
+    <!--<table ng-mouseleave="$ctrl.row=-1">-->
+        <!--<tr ng-mouseover="$ctrl.row=-1" >-->
+            <!--<th>#</th>-->
+            <!--&lt;!&ndash;<th ng-repeat="col in $ctrl.columns" ng-click="$ctrl.sort(col)" class="sortable"&ndash;&gt;-->
+            <!--&lt;!&ndash;ng-class="$ctrl.orderBy.indexOf(col) > -1 ? $ctrl.sortClass : 'sort-none'">{{ col | uppercase }}</th>&ndash;&gt;-->
+        <!--</tr>-->
+
+        <!--<tr ng-repeat="evilDwelers in $ctrl.evilDwelers | filter:$ctrl.searchText | orderBy: $ctrl.orderBy">-->
+            <!--<td>{{ $index+1 }}</td>-->
+            <!--<td>{{ evilDwelers.name }}</td>-->
+
+        <!--</tr>-->
+    <!--</table>-->
+<!--</div>-->

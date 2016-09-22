@@ -16,25 +16,25 @@
                     src: 'https://pbs.twimg.com/media/B5YSU-yCcAEW36J.jpg'
                 },
                 {
-                    src: 'http://www.parasholidays.in/blog/wp-content/uploads/2014/05/holiday-tour-packages-for-usa.jpg'
+                    src: 'http://www.gameguyz.com/sites/default/files/images/20130705071541.jpg'
                 },
                 {
-                    src: 'http://clickker.in/wp-content/uploads/2016/03/new-zealand-fy-8-1-Copy.jpg'
+                    src: 'http://i310.photobucket.com/albums/kk423/pokonyang_album/LOTR/Hobbits_RotK.jpg'
                 },
                 {
-                    src: 'http://images.kuoni.co.uk/73/indonesia-34834203-1451484722-ImageGalleryLightbox.jpg'
+                    src: 'http://www.twitrcovers.com/wp-content/uploads/2012/12/StarCraft-II-l.jpg'
                 },
                 {
-                    src: 'http://www.holidaysaga.com/wp-content/uploads/2014/09/Day08-SIN-day-Free-City-View.jpg'
+                    src: 'http://2.bp.blogspot.com/-6RXNdxLjo1I/TfNtwaYjlTI/AAAAAAAAAD8/yQeH_QvU9gw/s748/wallpaper_star_wars_the_force_unleashed_08_1920x1080.jpg'
                 },
                 {
-                    src: 'http://images.kuoni.co.uk/73/malaysia-21747826-1446726337-ImageGalleryLightbox.jpg'
+                    src: 'http://livedoor.blogimg.jp/kinisoku/imgs/a/2/a260c55b.jpg'
                 },
                 {
                     src: 'http://www.kimcambodiadriver.com/uploads/images/tours/kim-cambodia-driver-angkor-wat.jpg'
                 },
                 {
-                    src: 'https://www.travcoa.com/sites/default/files/styles/flexslider_full/public/tours/images/imperialvietnam-halong-bay-14214576.jpg?itok=O-q1yr5_'
+                    src: 'http://dogasu.bulbagarden.net/comparisons/kanto/ep012_paint/matoie.jpg'
                 }
             ];
         }

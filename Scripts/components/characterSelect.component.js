@@ -17,14 +17,14 @@
         });
     }
 
-    function characterSelectController(characterService) {
+    function characterSelectController() {
         var vm = this;
         //variables
-        vm.evilDwelers = characterService.evilDwelers;
-        //fucntions
-        // vm.badGuys = badGuys;
-        console.log(evilDwelers);
-        //
+        // vm.evilDwelers = characterService.evilDwelers;
+        // //fucntions
+        // // vm.badGuys = badGuys;
+        // console.log(evilDwelers);
+        // //
         //
         // function badGuys() {
         //     vm.name = characterService.evilDwelers.name;
