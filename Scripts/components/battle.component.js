@@ -17,9 +17,14 @@
         });
     }
 
-    function battleController() {
-        var vm = this;
+    function battleController($window, $scope) {
+        $scope.greeting = 'Are you sure?<div ng-click="playerInfo()"  ui-sref="playerInfo">Yes</div><div>No</div>';
+        $scope.doGreeting = function(greeting) {
+            $window.alert(greeting);
+        };
         
+        //var vm = this;
+
 
     }
 })();
