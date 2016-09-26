@@ -13,13 +13,13 @@
             var vm = this;
             vm.dataArray = [
                 {
-                    src: 'https://pbs.twimg.com/media/B5YSU-yCcAEW36J.jpg'
+                    src: 'http://static.feber.se/article_images/41/39/12/413912_1688.jpg'
                 },
                 {
                     src: 'http://www.gameguyz.com/sites/default/files/images/20130705071541.jpg'
                 },
                 {
-                    src: 'http://i310.photobucket.com/albums/kk423/pokonyang_album/LOTR/Hobbits_RotK.jpg'
+                    src: 'http://klimbo.ru/images/photoblog/kreativ/1/971%20Empire%20magazine%20anniversary%20(25).jpg'
                 },
                 {
                     src: 'http://www.twitrcovers.com/wp-content/uploads/2012/12/StarCraft-II-l.jpg'
