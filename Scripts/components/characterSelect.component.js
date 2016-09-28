@@ -19,6 +19,13 @@
 
     function characterSelectController() {
         var vm = this;
+
+        vm.isOpen = false;
+        vm.selectedMode = 'md-fling';
+        vm.selectedDirection = 'down';
+        // vm.pulldown = isHidden;
+
+
         //variables
         // vm.evilDwelers = characterService.evilDwelers;
         // //fucntions
@@ -31,6 +38,6 @@
         //     icon = characterService.evilDwelers.icon;
         //     console.log(vm.name);
         // }
-        
+
     }
 })();

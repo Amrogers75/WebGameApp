@@ -21,3 +21,14 @@ element.style{
 .textGroup{
     margin-left: 34%;
 }
+.evilbleererer{
+    visibility: hidden;
+    height: 100px;
+    border:solid;
+    background-color: green;
+}
+.evilName{
+    height: 100px;
+    border:solid;
+    background-color: green;
+}
