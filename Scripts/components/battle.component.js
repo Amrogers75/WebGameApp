@@ -17,14 +17,52 @@
         });
     }
 
-    function battleController($window, $scope) {
-        $scope.greeting = 'Are you sure?<div ng-click="playerInfo()"  ui-sref="playerInfo">Yes</div><div>No</div>';
-        $scope.doGreeting = function(greeting) {
-            $window.alert(greeting);
-        };
-        
-        //var vm = this;
-
-
-    }
+    function battleController($scope) {
+            $scope.modalClose = function modalClose() {
+                console.log('sup');
+                $('#myModal').modal('hide');
+            };
+            $scope.damageOne = function damageOne() {
+                var dead = document.getElementById('playerTwoHealth');
+                var damageOne;
+                document.getElementById('playerTwoHealth').value -= damageOne = Math.floor(Math.random() * 3) + 5;
+                document.getElementById('results').value += 'Nemo uses Flippy Flipper Flip and deals ' + damageOne + ' damage!\n';
+                if (dead.value <= 0) {
+                    console.log('dead');
+                    alert('Congratulations you won!');
+                    document.getElementById('endGame').innerHTML = "Continue";
+                    document.getElementById('gameScreen').innerHTML = "";
+                } else {
+                    console.log('alive')
+                }
+            };
+            $scope.damageTwo = function damageTwo() {
+                var dead = document.getElementById('playerTwoHealth');
+                var damageTwo;
+                document.getElementById('playerTwoHealth').value -= damageTwo = Math.floor(Math.random() * 9) + 2;
+                document.getElementById('results').value += 'Nemo uses Super Speedy Attack and deals ' + damageTwo + ' damage!\n';
+                if (dead.value <= 0) {
+                    console.log('dead');
+                    alert('Congratulations you won!');
+                    document.getElementById('endGame').innerHTML = "Continue";
+                    document.getElementById('gameScreen').innerHTML = "";
+                } else {
+                    console.log('alive')
+                }
+            };
+            $scope.damageThree = function damageThree() {
+                var dead = document.getElementById('playerTwoHealth');
+                var damageThree;
+                document.getElementById('playerTwoHealth').value -= damageThree = Math.floor(Math.random() * 7) + 3;
+                document.getElementById('results').value += 'Nemo uses Parent Bait and deals ' + damageThree + ' damage!\n';
+                if (dead.value <= 0) {
+                    console.log('dead');
+                    alert('Congratulations you won!');
+                    document.getElementById('endGame').innerHTML = "Continue";
+                    document.getElementById('gameScreen').innerHTML = "";
+                } else {
+                    console.log('alive')
+                }
+            };
+        }
 })();

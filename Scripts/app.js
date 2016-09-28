@@ -32,7 +32,7 @@
                 $mdOpenMenu(ev);
             };
             function playerInfo(){
-                
+
             }
             function battle(){
                 
