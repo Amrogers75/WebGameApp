@@ -31,10 +31,10 @@
                     src: 'http://livedoor.blogimg.jp/kinisoku/imgs/a/2/a260c55b.jpg'
                 },
                 {
-                    src: 'http://www.kimcambodiadriver.com/uploads/images/tours/kim-cambodia-driver-angkor-wat.jpg'
+                    src: 'http://cdn.playbuzz.com/cdn/9c202e06-43d4-480c-89e7-21dc8151ee42/3479d8ee-9fba-41e0-9f1d-8b3dffd7bfe9.jpg'
                 },
                 {
-                    src: 'http://dogasu.bulbagarden.net/comparisons/kanto/ep012_paint/matoie.jpg'
+                    src: 'http://getmovienews.com/wp-content/uploads/2016/08/fights-superman-wonder-woman.jpg'
                 }
             ];
         }

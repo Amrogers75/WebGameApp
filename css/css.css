@@ -27,8 +27,27 @@ element.style{
     border:solid;
     background-color: green;
 }
-.evilName{
+.evilName {
     height: 100px;
-    border:solid;
+    border: solid;
     background-color: green;
+}
+.char{
+    position:relative;
+
+}
+#evilAvatar{
+    width:115px;
+    height:115px;
+    position: absolute;
+
+}
+.evilName{
+
+    margin-top: 77px;
+    margin-left: 25px;
+    height: 111px;
+    width: 77px;
+
+    /*color: #r;*/
 }

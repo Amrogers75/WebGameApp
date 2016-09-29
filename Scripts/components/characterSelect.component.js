@@ -19,12 +19,19 @@
 
     function characterSelectController() {
         var vm = this;
-
+        vm.evilBut = evilBut;
+        
+        vm.notLocked  = true;
         vm.isOpen = false;
         vm.selectedMode = 'md-fling';
         vm.selectedDirection = 'down';
-        // vm.pulldown = isHidden;
 
+        // expect(element(by.css('evilBut')).getAttribute('disabled')).toBeTruthy();
+
+
+        function evilBut(){
+
+        }
 
         //variables
         // vm.evilDwelers = characterService.evilDwelers;
