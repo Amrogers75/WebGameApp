@@ -85,7 +85,7 @@
             <md-card ng-repeat="character in vm.topCharacters | orderBy:'-rating'" flex="">
               <md-card-header>
                 <md-card-avatar>
-                  <img ng-src="{{vm.charUrl[$index]}}" alt="player gravatar icon"/>
+                  <img ng-src="{{vm.charUrl[character.$id]}}" alt="player gravatar icon"/>
                 </md-card-avatar>
                 <md-card-header-text>
                   <span class="md-title">{{character.charName}} <br /></span>

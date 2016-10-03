@@ -52,7 +52,7 @@
     function getCharacterPlayerGravatarEmail(index, character){
       var p = Player.getPlayer(character.user);
       p.$loaded().then(function(){
-        vm.charUrl[index] = Gravatar.get_gravatar_image_url(p.email);
+        vm.charUrl[character.$id] = Gravatar.get_gravatar_image_url(p.email);
       })
     }
 
