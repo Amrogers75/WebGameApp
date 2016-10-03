@@ -10,6 +10,10 @@
     "angular-jk-carousel": "^0.1.6",
     "angular-material": "^1.1.1",
     "angular-messages": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "angularfire": "^2.0.2",
+    "angularjs-scroll-glue": "^2.0.7",
+    "firebase": "^3.4.1",
     "mdi": "^1.7.22"
   },
   "devDependencies": {},
